@@ -25,7 +25,7 @@ $result = $peppiekokkie->execute();
 
 if($result)
 {
-    echo "het record is verwijderd";
+    echo "het record is verwijderd <br>";
     header('Refresh:2.5; url=read.php');
 }
 else 
