@@ -14,7 +14,7 @@ try{
     $e->getMessage();
 }
 
-$sql = "DELETE FROM Persoon 
+$sql = "DELETE FROM pizza 
         WHERE Id = :Id;";
 
 $peppiekokkie = $pdo->prepare($sql);

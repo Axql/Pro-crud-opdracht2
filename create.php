@@ -28,6 +28,7 @@ $sql = "INSERT INTO Pizza ( Id,
 //maakt de query gereed met de prepare method 
 $statement = $pdo->prepare($sql);
 
+$statement->bindValue(':Id', $_GET['Id'],PDO::PARAM_INT);
 $statement->bindValue(':maat', $_POST['maat'], PDO::PARAM_STR);
 $statement->bindValue(':saus', $_POST['saus'], PDO::PARAM_STR);
 $statement->bindValue(':topping', $_POST['topping'], PDO::PARAM_STR);
